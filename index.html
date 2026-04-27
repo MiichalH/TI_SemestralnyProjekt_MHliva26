@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Helios Travel — cestovná kancelária so zájazdmi do Grécka. Santorini, Mykonos, Kréta a ďalšie grécke ostrovy za najlepšie ceny." />
+  <title>Helios Travel — Zájazdy do Grécka</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Vlastné CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGÁCIA
+       ============================================================ -->
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Hlavná navigácia">
+    <div class="container">
+
+      <!-- Logo / Brand -->
+      <a class="navbar-brand" href="index.html">
+        ☀️ Helios<span>Travel</span>
+      </a>
+
+      <!-- Hamburger tlačidlo pre mobilné zariadenia -->
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false"
+              aria-label="Otvoriť navigáciu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigačné odkazy -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Domov</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#zajazdy">Zájazdy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o-nas.html">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item ms-2">
+            <button class="btn-dark-mode" id="darkModeToggle" aria-label="Prepnúť tmavý režim">
+              🌙 Tmavý
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SEKCIA
+         ============================================================ -->
+    <section class="hero-section" id="hero" aria-label="Úvodný banner">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">✈️ Špecialist na Grécko od roku 2008</span>
+
+          <h1 class="hero-title">
+            Objavte krásu<br />
+            <em>Grécka</em> s nami
+          </h1>
+
+          <p class="hero-subtitle">
+            Od bielych domčekov Santorini až po antické ruiny Atén —
+            vytvoríme vám dovolenku snov v najkrajšej krajine Stredozemia.
+          </p>
+
+          <div class="hero-buttons d-flex flex-wrap gap-3 mb-5">
+            <a href="#zajazdy" class="btn-primary-custom btn-shimmer">
+              Prezrieť zájazdy <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="kontakt.html" class="btn-outline-custom">
+              Nezáväzná ponuka
+            </a>
+          </div>
+
+          <!-- Štatistiky -->
+          <div class="hero-stats d-flex flex-wrap gap-4">
+            <div class="stat-item">
+              <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+              <span class="stat-label">rokov skúseností</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="28" data-suffix="">28</span>
+              <span class="stat-label">destinácií v Grécku</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="4200" data-suffix="+">4200+</span>
+              <span class="stat-label">spokojných klientov</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         O NÁS — stručne (2 odseky + obrázok)
+         ============================================================ -->
+    <section class="section-about py-5 py-lg-6" id="o-nas-uvod" aria-label="O cestovnej kancelárii">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+
+          <!-- Text -->
+          <div class="col-12 col-md-6 order-md-2">
+            <span class="section-label">Naša história</span>
+            <h2 class="section-title">Grécko je naša vášeň,<br />nie len práca</h2>
+            <div class="section-divider ms-0"></div>
+            <p class="mb-3" style="font-size:1.02rem;">
+              Helios Travel vznikol v roku 2008 so snom ponúkať Slovákom autentický
+              zážitok z Grécka — nie len ďalší balíkový zájazd. Zakladatelia agentúry
+              sami žili na gréckych ostrovoch a poznajú každý kútiček tejto slnečnej
+              krajiny. Každý náš zájazd je premyslený do posledného detailu, od výberu
+              hotela až po tipy na miestne taverny.
+            </p>
+            <p class="mb-4" style="font-size:1.02rem;">
+              Spolupracujeme priamo s miestnymi gréckymu partnermi, vďaka čomu vám
+              vieme ponúknuť nielen lepšie ceny, ale aj exkluzívne zážitky — súkromné
+              lode, gastro túry alebo historické prehliadky s certifikovaným sprievodcom.
+              Naším cieľom je, aby ste sa z dovolenky vrátili s plným srdcom.
+            </p>
+            <a href="o-nas.html" class="btn btn-outline-primary">
+              Viac o nás <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+
+          <!-- Obrázok -->
+          <div class="col-12 col-md-6 order-md-1">
+            <div class="about-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=800&q=80"
+                alt="Biele domčeky na Santorini s výhľadom na more"
+                style="height: 420px;"
+              />
+              <div class="about-badge floating">
+                <span class="big-number">15+</span>
+                rokov v branži
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         KARTY — TOP ZÁJAZDY (aspoň 3)
+         ============================================================ -->
+    <section class="py-5 bg-light" id="zajazdy" aria-label="Výber zájazdov">
+      <div class="container py-4">
+
+        <div class="text-center mb-5">
+          <span class="section-label">Naše TOP ponuky</span>
+          <h2 class="section-title">Najobľúbenejšie zájazdy</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Vybrali sme pre vás tie najkrajšie destinácie, ktoré naši klienti
+            milujú rok čo rok. Každý zájazd zahŕňa ubytovanie, stravu a transfer.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Karta 1 — Santorini -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <!-- Obrázok v pomere 16:9 -->
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1509321528270-797a4f7c1485?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Oia village na Santorini — biele domy a modrý kostol"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-accent">Bestseller</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Santorini — Ostrov snov</h3>
+                <p class="card-text">
+                  Santorini je bezpochyby najfotogenickejší ostrov na svete. Prechádzka
+                  uličkami Oia s výhľadom na kalderu vám vyrazí dych. Naša ponuka
+                  zahŕňa ubytovanie v tradičnom cycladeskom štýle s bazénom s výhľadom
+                  na more, raňajky a privátny transfer z letiska.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 8 dní / 7 nocí</span>
+                  <span><i class="bi bi-people"></i> Max 12 osôb</span>
+                </div>
+                <div class="tour-price">od 899 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 2 — Kréta -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1627240821170-9e9f17f95d84?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Pláž Elafonisi na Kréte s ružovým pieskom"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-primary">All inclusive</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kréta — Najväčší ostrov</h3>
+                <p class="card-text">
+                  Kréta je ostrovom kontrastov — od ružových pláží Elafonisi cez
+                  dramatickú roklinu Samaria až po minojské paláce v Knosose. Náš
+                  all-inclusive pobyt v 4* hoteli vám zaistí maximálny komfort a čas
+                  na objavovanie. Súčasťou je aj celodenný výlet loďou s kúpaním.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 10 dní / 9 nocí</span>
+                  <span><i class="bi bi-people"></i> Max 20 osôb</span>
+                </div>
+                <div class="tour-price">od 749 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 3 — Mykonos -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1607703378679-465baaf8e8a0?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Ikonické veterné mlyny na Mykonose za súmraku"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-accent">Luxus</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Mykonos — Ostrov party & štýlu</h3>
+                <p class="card-text">
+                  Mykonos je symbolom gréckeho luxusu a živého nočného života. Biele
+                  uličky Mykonos Town, legendárne pláže Paradise a Super Paradise a
+                  úchvatné panorámy ikonických veterných mlynov — to všetko zažijete
+                  na tomto výnimočnom ostrove. Zájazd zahŕňa boutique hotel s bazénom.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 7 dní / 6 nocí</span>
+                  <span><i class="bi bi-people"></i> Max 10 osôb</span>
+                </div>
+                <div class="tour-price">od 1 099 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 4 — Atény -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80"
+                  alt="Akropola v Aténach pri západe slnka"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-primary">Kultúra</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Atény — Kolíska civilizácie</h3>
+                <p class="card-text">
+                  Atény sú mestom, kde každý kameň hovorí o histórii. Navštívte
+                  Akropolu a Parthenon, objavte živú štvrť Monastiraki alebo si
+                  vychutnajte večeru s výhľadom na osvetlenú Akropolu. Zájazd zahŕňa
+                  certifikovaného sprievodcu a vstupné do všetkých pamiatok.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 5 dní / 4 noci</span>
+                  <span><i class="bi bi-people"></i> Max 15 osôb</span>
+                </div>
+                <div class="tour-price">od 599 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 5 — Rhodos -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1671527881385-ce3882add4b1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Stredoveké staré mesto na Rhodose"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-accent">Rodiny</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Rhodos — Stredoveký klenot</h3>
+                <p class="card-text">
+                  Rhodos spája stredoveké opevnené mesto, zapísané v UNESCO, s
+                  kryštálovočistým morom a vynikajúcou gastronómiou. Ide o ideálnu
+                  destináciu pre rodiny s deťmi aj páry. Naše ubytovanie sa nachádza
+                  priamo pri pláži s detskými animačnými programami počas celého dňa.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 9 dní / 8 nocí</span>
+                  <span><i class="bi bi-people"></i> Max 25 osôb</span>
+                </div>
+                <div class="tour-price">od 679 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 6 — Korfu -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card tour-card position-relative h-100 shadow">
+              <div class="ratio ratio-16x9 position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=800&q=80"
+                  alt="Zelené útesy a tyrkysové more na Korfu"
+                  class="object-fit-cover"
+                />
+                <div class="card-img-overlay-badge">
+                  <span class="badge-primary">Nová ponuka</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Korfu — Benátske dedičstvo</h3>
+                <p class="card-text">
+                  Korfu je ostrov so silným benátskym vplyvom — záhrady, historické
+                  paláce a farebné mestečká vás prenesú do inej éry. Zároveň ponúka
+                  jedny z najkrajších skrytých zátok v celom Grécku. Zájazd kombinuje
+                  kultúrne výlety s relax plážovými dňami podľa vášho výberu.
+                </p>
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 8 dní / 7 nocí</span>
+                  <span><i class="bi bi-people"></i> Max 18 osôb</span>
+                </div>
+                <div class="tour-price">od 729 € <small style="font-size:0.8rem;font-weight:400;color:#718096;">/ osoba</small></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- / row -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CAROUSEL / GALÉRIA (aspoň 4 obrázky)
+         ============================================================ -->
+    <section class="gallery-section py-5" id="galeria" aria-label="Fotogaléria z Grécka">
+      <div class="container py-4">
+
+        <div class="text-center mb-5">
+          <span class="section-label">Inšpirácia</span>
+          <h2 class="section-title">Grécko očami našich klientov</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Fotografie, ktoré zachytili naši spokojní klienti počas zájazdov s Helios Travel.
+          </p>
+        </div>
+
+        <!-- Bootstrap Carousel -->
+        <div id="mainCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
+
+          <!-- Indikátory -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner rounded-3 shadow">
+
+            <div class="carousel-item active">
+              <img
+                src="https://images.unsplash.com/photo-1509321528270-797a4f7c1485?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Západ slnka nad Oia na Santorini — jedno z najkrajších miest na svete"
+              />
+              <div class="carousel-caption">
+                <h5>Západ slnka v Oia, Santorini</h5>
+                <p class="d-none d-md-block">Momentka, ktorú si naši klienti opisujú ako „najkrajší západ slnka v živote"</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1607703378679-465baaf8e8a0?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Nočný Mykonos s osvetlenými uličkami a veterními mlynmi"
+              />
+              <div class="carousel-caption">
+                <h5>Nočný Mykonos</h5>
+                <p class="d-none d-md-block">Legendárne veterné mlyny a živá atmosféra gréckej noci</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1627240821170-9e9f17f95d84?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Ružová pláž Elafonisi na Kréte s tyrkysovým morom"
+              />
+              <div class="carousel-caption">
+                <h5>Pláž Elafonisi, Kréta</h5>
+                <p class="d-none d-md-block">Ružový piesok a tyrkysové more — ako z rozprávky</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80"
+                class="d-block w-100"
+                alt="Akropola v Aténach s Parthenonom osvietená slnkom"
+              />
+              <div class="carousel-caption">
+                <h5>Akropola, Atény</h5>
+                <p class="d-none d-md-block">Symbol starovekého Grécka a kolíska európskej civilizácie</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=1200&q=80"
+                class="d-block w-100"
+                alt="Skrytá zátoka s čistým morom na ostrove Korfu"
+              />
+              <div class="carousel-caption">
+                <h5>Skrytá zátoka, Korfu</h5>
+                <p class="d-none d-md-block">Jedno z mnohých tajomstiev, ktoré vám odhalíme</p>
+              </div>
+            </div>
+
+          </div><!-- / carousel-inner -->
+
+          <!-- Šípky -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Predchádzajúci</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Nasledujúci</span>
+          </button>
+
+        </div><!-- / carousel -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MODAL — Prečo cestovať s nami (tlačidlo v CTA)
+         ============================================================ -->
+    <div class="modal fade" id="prečoModal" tabindex="-1" aria-labelledby="prečoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <h2 class="modal-title h4" id="prečoModalLabel" style="font-family:var(--font-display);">
+              Prečo cestovať s Helios Travel?
+            </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
+          </div>
+          <div class="modal-body pt-3">
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <div class="d-flex gap-3 p-3 rounded-3 bg-light">
+                  <span style="font-size:2rem;">🏆</span>
+                  <div>
+                    <h3 class="h6 mb-1">15+ rokov skúseností</h3>
+                    <p class="small text-muted mb-0">Sme etablovaná kancelária s dlhou históriou a tisíckami spokojných klientov.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="d-flex gap-3 p-3 rounded-3 bg-light">
+                  <span style="font-size:2rem;">💰</span>
+                  <div>
+                    <h3 class="h6 mb-1">Najlepšie ceny</h3>
+                    <p class="small text-muted mb-0">Priama spolupráca s gréckymi partnermi znamená ceny bez zbytočných príplatkov.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="d-flex gap-3 p-3 rounded-3 bg-light">
+                  <span style="font-size:2rem;">🛡️</span>
+                  <div>
+                    <h3 class="h6 mb-1">Poistenie a záruka</h3>
+                    <p class="small text-muted mb-0">Všetky zájazdy sú poistené a zahŕňajú asistenčnú službu 24/7 priamo v Grécku.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="d-flex gap-3 p-3 rounded-3 bg-light">
+                  <span style="font-size:2rem;">🌿</span>
+                  <div>
+                    <h3 class="h6 mb-1">Zodpovedný turizmus</h3>
+                    <p class="small text-muted mb-0">Podporujeme miestnych podnikateľov a minimalizujeme ekologickú stopu.  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <a href="kontakt.html" class="btn btn-primary">Nezáväzná ponuka</a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Zavrieť</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         CALL TO ACTION
+         ============================================================ -->
+    <section class="cta-section py-5 text-white" aria-label="Výzva na akciu">
+      <div class="container py-4 text-center position-relative">
+        <span class="section-label" style="color:#f6d365;">Rezervujte teraz</span>
+        <h2 class="display-5 fw-bold mb-3" style="font-family:var(--font-display);">
+          Vaša dovolenka snov<br />čaká len na vás
+        </h2>
+        <p class="lead mb-4 opacity-90" style="max-width:560px;margin:0 auto 2rem;">
+          Neváhajte — najlepšie termíny na letnú sezónu sa vypredávajú rýchlo.
+          Kontaktujte nás a dostanete nezáväznú cenovú ponuku do 24 hodín.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="kontakt.html" class="btn btn-warning btn-lg fw-bold px-4 btn-shimmer">
+            <i class="bi bi-envelope me-2"></i> Napísať nám
+          </a>
+          <button type="button" class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#prečoModal">
+            <i class="bi bi-info-circle me-2"></i> Prečo s nami?
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Logo a popis -->
+        <div class="col-12 col-md-4">
+          <h2 class="h4 mb-3" style="font-family:var(--font-display);">☀️ Helios<span style="color:var(--color-secondary);">Travel</span></h2>
+          <p class="text-white-50 small mb-3">
+            Špecialista na Grécko od roku 2008.<br />
+            Vaša dovolenka, naša vášeň.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Rýchle odkazy -->
+        <div class="col-6 col-md-2">
+          <h3 class="h6 text-white mb-3">Navigácia</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Domov</a></li>
+            <li class="mb-2"><a href="#zajazdy"><i class="bi bi-chevron-right me-1"></i>Zájazdy</a></li>
+            <li class="mb-2"><a href="o-nas.html"><i class="bi bi-chevron-right me-1"></i>O nás</a></li>
+            <li class="mb-2"><a href="kontakt.html"><i class="bi bi-chevron-right me-1"></i>Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Destinácie -->
+        <div class="col-6 col-md-2">
+          <h3 class="h6 text-white mb-3">Destinácie</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#zajazdy">Santorini</a></li>
+            <li class="mb-2"><a href="#zajazdy">Kréta</a></li>
+            <li class="mb-2"><a href="#zajazdy">Mykonos</a></li>
+            <li class="mb-2"><a href="#zajazdy">Atény</a></li>
+            <li class="mb-2"><a href="#zajazdy">Rhodos</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="col-12 col-md-4">
+          <h3 class="h6 text-white mb-3">Kontakt</h3>
+          <ul class="list-unstyled small text-white-50">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Hlavná 42, 080 01 Prešov</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+421905123456">+421 905 123 456</a></li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:info@heliostravel.sk">info@heliostravel.sk</a></li>
+            <li class="mb-2"><i class="bi bi-clock me-2"></i>Po–Pi: 9:00 – 17:00</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="text-white-50 small mb-0">
+          &copy; 2025 Helios Travel s.r.o. Všetky práva vyhradené.
+        </p>
+        <p class="text-white-50 small mb-0">
+          Licencia CK: 2008/SK/001 | IATA akreditácia
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Vlastný JS -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
