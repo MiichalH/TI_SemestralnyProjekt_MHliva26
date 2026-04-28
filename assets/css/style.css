@@ -44,7 +44,12 @@ body {
 body.dark-mode {
   background-color: #0f1923;
   color: #e2e8f0;
+  --bs-body-color: #e2e8f0;
+  --bs-secondary-color: #a0aec0;
+  --bs-secondary-color-rgb: 160, 174, 192;
+  --bs-link-color-rgb: 99, 179, 237;
   --color-text: #e2e8f0;
+  --color-text-muted: #a0aec0;
   --color-sand: #1a2535;
   --color-light-blue: #1a2535;
 }
@@ -63,6 +68,14 @@ body.dark-mode .card {
 body.dark-mode .card-text,
 body.dark-mode .card-title {
   color: #e2e8f0;
+}
+
+body.dark-mode .text-muted {
+  color: #a0aec0 !important;
+}
+
+body.dark-mode a.text-muted:hover {
+  color: #c5d0de !important;
 }
 
 body.dark-mode .bg-light,
@@ -776,6 +789,42 @@ body.dark-mode .contact-form-wrapper {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-card);
   padding: 2rem;
+}
+
+.contact-section-heading {
+  color: var(--color-primary-dark);
+}
+
+body.dark-mode .contact-form-wrapper,
+body.dark-mode .contact-info-box {
+  color: #e2e8f0;
+}
+
+body.dark-mode .contact-section-heading {
+  color: #63b3ed;
+}
+
+body.dark-mode .contact-form-wrapper .text-muted,
+body.dark-mode .contact-info-box .text-muted,
+body.dark-mode .contact-info-box .text-muted a,
+body.dark-mode .contact-info-box .list-unstyled.text-muted,
+body.dark-mode .contact-info-box .list-unstyled.text-muted li,
+body.dark-mode .contact-form-wrapper small {
+  color: #a0aec0 !important;
+}
+
+body.dark-mode .contact-form-wrapper .form-label,
+body.dark-mode .contact-form-wrapper .form-check-label,
+body.dark-mode .contact-info-box .fw-semibold {
+  color: #e2e8f0;
+}
+
+body.dark-mode .contact-form-wrapper a.text-primary {
+  color: #63b3ed !important;
+}
+
+body.dark-mode .contact-form-wrapper a.text-primary:hover {
+  color: #90cdf4 !important;
 }
 
 .contact-info-item {
